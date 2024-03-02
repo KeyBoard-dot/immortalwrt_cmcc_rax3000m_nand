@@ -72,7 +72,7 @@ jobs:
     - name: Import external feeds - design-theme
       working-directory: ./openwrt
       run: |
-        git clone https://github.com/gngpp/luci-theme-design.git package/luci-theme-design
+        git clone -b js --depth 1 https://github.com/gngpp/luci-theme-design.git package/luci-theme-design
 
     - name: Configuration Customization - Build_CMCC_RAX3000M
       env:
